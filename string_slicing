@@ -1,0 +1,36 @@
+mystr="puru is a good girl"
+print(mystr)
+#in python index starts from 0
+print(mystr[4])#prints 5th charater i.e a space
+print(mystr[0:6])#will exclude 6th char
+print(len(mystr))# indexfrom 0 to 18
+#print(mystr[44])#will give error as we are trying to access the character which is not present.
+print(mystr[0:44])#will not show error
+print(mystr[0:4:2])#will skip 1 -1character
+print(mystr[0:])#will print till end
+print(mystr[:6])#will take start as 0 and will print from 0 to 6
+print(mystr[::])# equivalent to print(mystr[0:len of the str:1])will take the 3rd one as 1 which is by default in python
+print(mystr[::3])# will miss 2-2 characters
+print(mystr[::300])#jitna resolve kar payega utna hi karega
+
+#negative indexes
+print(mystr[-4:-2])#is equi to print(mystr[15:17])
+print(mystr[-4:-2:-1])
+print(mystr[::-1])#will reverse the string
+print(mystr[::-2])#will reverse the string and skip 1-1 character
+
+#string functios
+print(type(mystr))
+print(mystr.isalnum())#will check if mystr is alphanumeric
+av="puruisagoodgirl"
+avi="puruisa7goodgirl"
+print(av.isalnum())#Returns True if all characters in the string are alphanumeric ,agr hmlog string se spaces hata de to wo alphabet bann jata h
+print(avi.isalnum())
+print(mystr.isalpha())#Returns True if all characters in the string are alphabet
+print(mystr.endswith("ggirl"))
+print(mystr.count("u"))#counts no of u's in the given string
+print(mystr.capitalize())#capitalize onle fisrt character in the line
+print(mystr.find("is"))#returns the index from where is starts
+print(mystr.lower())
+print(mystr.upper())
+print(mystr.replace("is","are"))
